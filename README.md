@@ -1,1 +1,1 @@
-# Online-Rental-home-mnagement-system
+# Online-Rental-house & PG management system
