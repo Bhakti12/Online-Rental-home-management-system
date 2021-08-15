@@ -1,0 +1,120 @@
+{% load static %}
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<html>
+<head>
+	</head>
+	<body>
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+    	<table width="100%">
+		<tr>
+
+			<Td width="20%">
+				<img src="{% static 'images/skoob.png' %}" height=100 width=100>
+    		</Td>
+    		<td>
+    		<h1 class="card-title"><span class="text-danger" style="font-family: Garamond,Times,serif; font-size: 60px;"><b>SKOOB</b></span></h1>
+    		<p class="card-text"><span class="text-success" style="font-family: Garamond,Times,serif; font-size: 30px;"><b>Once you Learn to READ you will be forever free</b></span></p>
+			</td>
+      <td>
+        <span style="font-family: Garamond,Times,serif; font-size: 20px; text-align: right;">Welcome, {{ user.username|default:'Guest' }}!</span>
+      </td>
+		</tr>
+      </table>
+
+      <li class="nav-item">
+        <a class="nav-link" style="font-family: Garamond,Times,serif; font-size: 20px;" href="#" onclick="window.location='index.php'" class="menus">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="font-family: Garamond,Times,serif; font-size: 20px;" href="#" onclick="window.location='gallery.php'" class="menus">Gallary</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="font-family: Garamond,Times,serif; font-size: 20px;" href="#" onclick="window.location='reg.php'" class="menus">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="font-family: Garamond,Times,serif; font-size: 20px;" href="#" onclick="window.location='login.php'" class="menus">Log In</a>
+      </li>
+        
+      </li>
+      
+     </ul>
+    </div>
+  </div>
+<link href="{% static 'style.css' %}" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<script>
+		function srch(s)
+		{
+			document.getElementById('s').innerHTML="<iframe src='search.php?s="+s+"' style='width:100%;border:0px;height:900px'></iframe>";
+			//document.getElementById('s').innerHTML=s;
+		}
+	</script>
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{% static 'images/banner.jpg' %}" height=500 width=1500 style="opacity: 0.5"></img>
+
+    </div>
+    <b width=100% colspan="2" align="left"><em><h3 style="font-family: Garamond,Times,pacifico; font-size: 25px; text-align: left;"><span class="badge badge-dark">Read and Enjoy<br><br>There is more treasure in<br> books than in<br>  all the pirate's loot on treasure island.</span></h3></em></b>
+  </div>
+  <div class="alert alert-secondary" role="alert">
+<h4 class="alert-heading" style="font-family: Garamond,Times,serif; font-size: 60px;">About Us</h4>
+<p class="text-justify" style="font-family: Garamond,Times,serif; font-size: 20px;">SKOOB is an online book reselling portal which acts as a central database containing a wide collection of books and genres to choose from, including fiction and fantasy, crime and thrillers, cooking, horror, textbooks, historical books and many more.
+
+SKOOB  acts as a medium between owner and buyer of the book. The owner can sell the used books which, despite having been preloved, are still in optimum condition and at a great price.The user visiting the website can see the wide range of books arranged in respective categories.The user may select the desired book and view its price and can purchase it.
+
+</p>
+</h4>
+</div>
+
+<div class="card-footer">
+<h4 align="center">
+<footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2" style="font-family: Garamond,Times,serif; font-size: 20px;"><b>Some Best site for reading</b></h2>
+              <ul class="list-unstyled">
+                <li><a href="https://www.magicbricks.com/"><span style="font-family: Garamond,Times,serif; font-size: 15px;">Amazon kindle</span></a></li>
+                <li><a href="https://www.99acers.com/"><span style="font-family: Garamond,Times,serif; font-size: 15px;">GoodReads</span></a></li>
+                <li><a href="https://www.housing.com/"><span style="font-family: Garamond,Times,serif; font-size: 15px;">BookBub</span></a></li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2" style="font-family: Garamond,Times,serif; font-size: 20px;"><b>Follow Us On</b></h2>
+              <ul class="list-unstyled">
+                <li><img src="{% static 'images/insta.jpg' %}" height="20px" width="20px"><span style="font-family: Garamond,Times,serif; font-size: 15px;"></span></img></li>
+                <li><img src="{% static 'images/facebook.png' %}" height="20px" width="20px"><span style="font-family: Garamond,Times,serif; font-size: 15px;"></span></img></li>
+                <li><img src="{% static 'images/twitter.jpg' %}" height="20px" width="20px"><span style="font-family: Garamond,Times,serif; font-size: 15px;"></span></img></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2" style="font-family: Garamond,Times,serif; font-size: 20px;"><b>Have a Questions?</b></h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><span class="icon icon-map-marker"></span><span class="text" style="font-family: Garamond,Times,serif; font-size: 15px;">Raiji baug, Junagadh</span></li>
+                  <li><span class="icon icon-phone"></span><span class="text" style="font-family: Garamond,Times,serif; font-size: 15px;">+91 9409153650</span></li>
+                  <li><a href="https://gmail.com"><span class="icon icon-envelope pr-4"></span><span class="text" style="font-family: Garamond,Times,serif; font-size: 15px;">sanghanibhakti922@gmail.com</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+  
+            <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+          </div>
+        </div>
+      </div>
+</footer>
+</body>
+</html>
